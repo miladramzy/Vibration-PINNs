@@ -9,7 +9,7 @@ This repository presents a series of analysis on the performance of Physics-Info
 
 Codes are developed using JAX library (https://github.com/google/jax)
 
-<img src="ezgif.com-optimize.gif" width="850">
+<img src="assets/ezgif.com-optimize.gif" width="850">
 
 ## Files
 This repository contains the following files:
