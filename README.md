@@ -1,6 +1,6 @@
 # Vibration-PINNs
 
-## 
+
 This repository presents a series of analysis on the performance of Physics-Informed Neural Networks in vibrational systems. The limitation of PINNs in learning such systems is discussed and the potential solutions are investigated. Specifically, the following topics are covered:
 
 *   Free Vibration of a damped translational System (mass-spring-damper)
@@ -22,3 +22,6 @@ This repository is released under the mit licence, which can be found in the LIC
 ## Related resources
 
 *  https://github.com/benmoseley/harmonic-oscillator-pinn
+
+
+If you find any issues or errors in the tutorial materials or have suggestions for improvements, please feel free to create an issue or pull request.
