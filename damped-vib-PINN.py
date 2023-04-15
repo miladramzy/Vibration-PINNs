@@ -7,7 +7,7 @@ from tqdm import trange
 
 import matplotlib.pyplot as plt
 
-#%%
+
 # Define MLP 
 # activation function: tanh
 # Initialization: Xavier Glorot 
@@ -121,8 +121,6 @@ epoch_log = []
 W_log = []
 L_t_log = []
 
-#%%
-
 # Define network and ode functions
 def neural_net(params, t):
 
@@ -149,8 +147,7 @@ u_pred_fn = vmap(neural_net, (None, 0))
 r_pred_fn = vmap(residual_net, (None, 0))
 v_pred_fn = vmap(velocity_net, (None, 0))
 
-#%% Training losses
-
+# Training losses
 # Initial displacement loss
 @jit
 def loss_ics(params):
@@ -200,8 +197,7 @@ def step(i, opt_state):
 
     return opt_update(i, g, opt_state)
 
-#%% Training
-
+# Training
 nIter = 40000 # number of epochs
 pbar = trange(nIter)
 
@@ -230,8 +226,7 @@ for it in pbar:
                           'loss_res':  loss_res_value,
                           'loss_vel': loss_v_value})
 
-#%% Plot training history and calculate relative l2 error
-
+# Plot training history and calculate relative l2 error
 plt.plot(epoch_log, loss_ics_log)
 plt.plot(epoch_log, loss_res_log)
 plt.plot(epoch_log, loss_vel_log)
@@ -242,7 +237,7 @@ u_pred = u_pred_fn(params, t_)
 error = np.linalg.norm(u_pred - x_) / np.linalg.norm(x_) 
 print('Relative l2 error: {:.3e}'.format(error))
      
-#%% Compare PINN and exact solutions
+# Compare PINN and exact solutions
 from matplotlib.pyplot import figure
 
 figure(figsize=(8, 5))
