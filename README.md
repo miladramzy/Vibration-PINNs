@@ -10,13 +10,13 @@ This repository presents a series of analysis on the performance of Physics-Info
 Codes are developed using JAX library (https://github.com/google/jax)
 
 ### Training PINNs on damped vibration system with t_end = 1 s
-<img src="assets/damped-vib-gif-1sec.gif" width="500">
+<img src="assets/damped-vib-gif-1sec.gif" width="600">
 
 ### Training PINNs on damped vibration system with t_end = 2 s
-<img src="assets/damped-vib-gif-2sec.gif" width="500">
+<img src="assets/damped-vib-gif-2sec.gif" width="600">
 
 ### Training PINNs on damped vibration system with t_end = 3 s
-<img src="assets/damped-vib-gif-3sec.gif" width="500">
+<img src="assets/damped-vib-gif-3sec.gif" width="600">
 
 ## Files
 This repository contains the following files:
